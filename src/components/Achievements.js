@@ -24,9 +24,9 @@ export const Achievements = () => {
                     <p className='hero' data-aos="fade-up" style={{fontSize: '30px'}}>Android Core Team | GDSC DEI</p>                    
                 </Row>
                 <Row xs = {12} md = {2} className="justify-content-end my-5">
-                    <p className='hero' data-aos="fade-up" style={{fontSize: '20px'}}>HKU | DEI Studentn Exchange Program</p>                    
+                    <p className='hero' data-aos="fade-up" style={{fontSize: '20px'}}>HKU | DEI Student Exchange Program</p>                    
                 </Row>
-                
+
             </Col>
         </div>
     </>
