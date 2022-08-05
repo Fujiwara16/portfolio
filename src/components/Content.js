@@ -1,15 +1,12 @@
 import React, { useState } from 'react'
 import {ContentBody} from './ContentBody';
-import Divider from '@mui/material/Divider';
-import { PersonalInfo } from './PersonalInfo';
 import Card from '@mui/material/Card';
-
 import CardContent from '@mui/material/CardContent';
 export const Content = () => {
     let contentStyle = {
         minHeight:'90vh',
     }
-    let [experience,setExperience] = useState([{
+    let [experience] = useState([{
       id:0,
       title: 'mFilterIt',
       location: "Noida",
@@ -19,8 +16,7 @@ export const Content = () => {
       techStack: "Flutter, dart, AWS, Python, SQL, Charles Proxy",
       body: "– Developed an app using flutter for internal employee performance assessment, optimised code structure using MVVM architecture for easier understanding. Automated the manual work for the HR department to assess an employee by implementing functions inside the server to provide consolidated rating to the user. Learnt to develop APIs using AWS lambda and python, debugged them using cloudwatch. Designed a database structure from scratch to store user data with SHA 256 encrypted password and KRAs for each employee. Used SMTP to send email on update, edit and delete calls.\n – Scraped data using Charles,Python and Pandas for apps and websites like - Zomato, Flipkart and Youtube. Optimised the code by implementing threading using Thread Pool Executor.\n – Developed a website using flutter and APIs to connect to the database for bundle scraping and provide an option for downloading a PDFs with data contained within them in an organised manner. Initialised a Fargate to scrape and input bundle data into the database if the bundle is not present in the existing DB.",
     }]);
-
-    let[projects,setProjects] = useState([{
+    let[projects] = useState([{
       id:0,
       project:true,
       title: "DB Biometric Enrolment",
@@ -42,23 +38,14 @@ export const Content = () => {
     ]);
 
     
-    let [personalInfo,setPersonalInfo] = useState({
-      name: "Nij Mehar Grover",
-      mobile:"+91-8303768196",
-      education:"Bachelors in Technology",
-      field: "Electrical Engineering / specialisation in Computer Science",
-      institute:"Daylabagh Educational Institue | Agra",
-      linkedin:"https://linkedin.com/in/nijmehar",
-      github:"https://github.com/K1RA-16",
-      email:"nijmehar16@gmail.com"
-    })
-    let [education,setEducation] = useState([{
-      title:"B.Tech (EE/cs)",
-      institute:"Daylabagh Educational Institue | Agra",
-      cgpa:"8.2 (Current)",
-      year:"2020-Present",
+    
+    // let [education] = useState([{
+    //   title:"B.Tech (EE/cs)",
+    //   institute:"Daylabagh Educational Institue | Agra",
+    //   cgpa:"8.2 (Current)",
+    //   year:"2020-Present",
 
-    }]);
+    // }]);
     
   return (
   <>
@@ -66,17 +53,10 @@ export const Content = () => {
         {/* <Divider style={{borderColor: 'gray',width: '100%'}}/> */}
 
 
-        <Card className="shadow text-light my-5" data-aos='fade-up'style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
-      <CardContent>
-      <div className = "container" style={{minHeight: '40vh',}}>
-        <PersonalInfo personalInfo = {personalInfo}/>
-        </div>
-      </CardContent>
-      </Card>
-       
+      
       <Card className="shadow text-light my-5" data-aos='fade-up'  style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
       <CardContent>
-      <h1 className="p-3" style={{fontSize: '50px'}}>Experience</h1>
+      <h1 className="hero p-3" style={{fontSize: '40px'}}>Experience</h1>
         <hr />
       {experience.length ===0 ? 
         "No experience present" : experience.map((experience)=>{
@@ -87,7 +67,7 @@ export const Content = () => {
 
           <Card className=" shadow text-light my-5" data-aos='fade-up' style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
       <CardContent>
-        <h1 className="p-3">Projects</h1>
+        <h1 className="hero p-3" style={{fontSize: '40px'}}>Projects</h1>
         <hr />
       {projects.length ===0 ? 
         "No Projects present" : projects.map((project)=>{

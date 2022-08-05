@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+import { PersonalInfo } from './components/PersonalInfo';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import {Content} from './components/Content'
 import {Footer} from './components/Footer'
 import {HeaderComponent} from './components/HeaderComponent'
@@ -9,6 +12,7 @@ import {SideBar} from './components/SideBar';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import {Achievements} from "./components/Achievements";
 function App() {
   let myTheme = {
     width: '100%',
@@ -16,7 +20,7 @@ function App() {
     zIndex:'2',
     scrollBehavior: "smooth"
   }
-  let [technicalSkills,setTechnicalSkills] = useState({
+  let [technicalSkills] = useState({
     programming: [{
       name:"C/C++",
       path:"cLogo.png"
@@ -62,18 +66,19 @@ function App() {
     tools:["Git/Github", "Firebase", "Jira", "Google Cloud", "AWS Lambda", "AWS Amplify", "MY SQL" ,"Windows", "Mac", "Linux","Bootstrap"]
   });
 
-  let [achievements,setAchievements] = useState({
-    hackathon:"Runner Up in HACK4PAN",
-    programming: "3 star coder at Code-chef",
-    positions: "Android core team member / Google Developer Student Club / DEI"
-  });
-
+  let [personalInfo] = useState({
+    name: "Nij Mehar Grover",
+    mobile:"+91-8303768196",
+    education:"Bachelors in Technology",
+    field: "Electrical Engineering / specialisation in Computer Science",
+    institute:"Daylabagh Educational Institue | Agra",
+    linkedin:"https://linkedin.com/in/nijmehar",
+    github:"https://github.com/K1RA-16",
+    email:"nijmehar16@gmail.com"
+  })
 
  const particlesInit = useCallback(async (engine) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
 }, []);
 
@@ -83,7 +88,7 @@ const particlesLoaded = useCallback(async (container) => {
   return (
     <>
      <BrowserRouter>
-     //particles
+    s
      <Particles style={{zIndex:'-100', position: 'fixed'}}
             id="tsparticles"
             init={particlesInit}
@@ -161,11 +166,19 @@ const particlesLoaded = useCallback(async (container) => {
                 detectRetina: true,
             }}
         />
-    //page
+  
       <div className="bg-dark text-light" style={myTheme}>
     
 
       <HeaderComponent />
+      <Card className="shadow text-light my-5" data-aos='fade-up'style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
+      <CardContent>
+      <div className = "container" style={{minHeight: '40vh',}}>
+        <PersonalInfo/>
+        </div>
+      </CardContent>
+      </Card>
+       
         <Row>
           <Col xs = {12} md={12} lg = {8}>
           <Content />
@@ -174,7 +187,8 @@ const particlesLoaded = useCallback(async (container) => {
           <SideBar technicalSkills = {technicalSkills}/>
           </Col>
         </Row>
-          <Footer/>
+        <Achievements/>
+          <Footer  personalInfo = {personalInfo}/>
          
         </div> 
      

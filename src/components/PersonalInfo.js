@@ -1,50 +1,27 @@
 import {React ,useEffect} from 'react'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
 import { StyleRoot } from 'radium';
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import {Link } from 'react-router-dom';
+import {Row,Col} from 'react-bootstrap';
 import Aos from "aos";
 import "aos/dist/aos.css"
-export const PersonalInfo = ({personalInfo}) => {
+export const PersonalInfo = () => {
   useEffect(()=>{
     Aos.init({duration: 6000});
   },[]);
-    let linkStyle = {
-        fontSize:'15px',
-        color:'green',
-       
-    }
-    let infoStyle = {
-        textAlign:'right',
-        fontSize:'15px',
-        '@media (max-width: 760px) ':{
-            textAlign:'center',
-           }
-     
-    }
-    let columnStyle = {
-        textAlign:'right',
-        marginTop:'40px',
-        '@media (max-width: 760px) ':{
-           display:'none',
-           textAlign:'right',
-          }
-    }
-    let rowStyle = {
-        display:'none',
-  
-        '@media (max-width: 760px) ':{
-           display:'block'
-          }
-    }
+   
     let imageStyle = {
         clipPath: "circle(40%)",
-        width:"250px",
+        width:"350px",
+        
         '@media (max-width: 760px) ':{
-          width:"150px",
+          width:"250px",
           
         },
         '@media (min-width: 760px) ':{
@@ -52,7 +29,7 @@ export const PersonalInfo = ({personalInfo}) => {
         }
     }
     let imageJustification = {
-     
+  
         '@media (max-width: 760px) ':{
             display:"flex",
             justifyContent:"center",
@@ -62,71 +39,140 @@ export const PersonalInfo = ({personalInfo}) => {
     let conatinerStyle = {
         margin: '10px'
     }
+    let paragraphStyle = {
+      fontSize: '40px',
+      '@media (max-width: 760px) ':{
+        fontSize: '30px',
+      },
+        color:"white"
+    }
   return (
-    <div className="jumbotron p-3">
+    <div className="p-3">
        
+       <Row>
+        <Col xs = {12} md = {7} lg = {5} >
         <StyleRoot style={imageJustification}>
-            <img src="myPhoto.jpg" style={imageStyle} alt="" width={50} data-aos='fade-up'/>
-        </StyleRoot>
-       
-        <div style={conatinerStyle}>
-            <StyleRoot>
-        <Col data-aos='fade-up'>
-        <Row>
-            
-          <h1 className="display-5" style={{color:'green',textAlign:'right', '@media (max-width: 760px) ':{
-            textAlign:'center',
-           }}} >{personalInfo.name}</h1>
-       
-        </Row>
-        <Row> <h6 className="lead" style={infoStyle}>Phone number - {personalInfo.mobile} </h6></Row>
-        <Row> <h6 className="lead" style={infoStyle}>{personalInfo.education} | {personalInfo.field}</h6></Row>
-        <Row> <h6 className="lead" style={infoStyle}>{personalInfo.institute}</h6></Row>
+            <img src="myPhoto.jpg" style={imageStyle} alt=""  data-aos='fade-up'/>
+            </StyleRoot>
         </Col>
-            <hr className="my-4" style={{color: 'gray',
-            '@media (min-width: 760px)':{
-              display:'none'
-            }}}data-aos='fade-up' />
+   
+        <Col>
+        <StyleRoot>
+       
+         <p style={paragraphStyle} className="hero glitch layers" data-text="Hi, I am Nij Mehar. 
+          An app developer by day and a web developer by night.">
+            <span>
+                Hi, I am Nij Mehar. 
+              An app developer by day and a web developer by night.
+            </span>
+         </p>
         </StyleRoot>
+      <div className='my-5'>
+  {/* //optimise with a for loop */}
+        <Timeline position="alternate">
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="white"
+          data-aos='fade-up'
+        >
+          1st Sem
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector data-aos='fade-up'/>
+          <TimelineDot data-aos='fade-up'>
+          
+          </TimelineDot>
+          <TimelineConnector data-aos='fade-up'/>
+        </TimelineSeparator>
+        <TimelineContent data-aos='fade-up'>DSA</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="white"
+          data-aos='fade-up'
+        >
+          2nd Sem
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector data-aos='fade-up'/>
+          <TimelineDot data-aos='fade-up'>
+          
+          </TimelineDot>
+          <TimelineConnector data-aos='fade-up'/>
+        </TimelineSeparator>
+        <TimelineContent data-aos='fade-up'>Android Dev</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          data-aos='fade-up'
+          color="white"
+        >
+          3rd Sem
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector data-aos='fade-up'/>
+          <TimelineDot data-aos='fade-up'>
+          
+          </TimelineDot>
+          <TimelineConnector data-aos='fade-up'/>
+        </TimelineSeparator>
+        <TimelineContent data-aos='fade-up'>Flutter Dev / DSA</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          data-aos='fade-up'
+          color="white"
+        >
+          4th Sem
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector data-aos='fade-up'/>
+          <TimelineDot data-aos='fade-up'>
+          
+          </TimelineDot>
+          <TimelineConnector data-aos='fade-up'/>
+        </TimelineSeparator>
+        <TimelineContent data-aos='fade-up'>Flutter Dev / Backend / APIs / DBs / Internship</TimelineContent>
+        </TimelineItem>
+       
+        <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="white"
+          data-aos='fade-up'
+        >
+          5th Sem
+        </TimelineOppositeContent>
+        <TimelineSeparator >
+          <TimelineConnector data-aos='fade-up'/>
+          <TimelineDot data-aos='fade-up'>
+          </TimelineDot>
+          <TimelineConnector data-aos='fade-up'/>
+        </TimelineSeparator >
+        <TimelineContent data-aos='fade-up'>Web Dev</TimelineContent>
+        </TimelineItem>
+        </Timeline>
+        </div>
+        </Col>
+     
+       </Row>
         
-        <StyleRoot data-aos='fade-up'>
-            <div style={columnStyle}>
-            <Col>
-            <Row>
-            <h6 className="lead" style={linkStyle}>Email - <a href={personalInfo.email} style={linkStyle} > {personalInfo.email}</a></h6>
-            </Row>
-            <Row>
-            <h6 className="lead" style={linkStyle}> LinkedIn - <a href={personalInfo.linkedin}  style={linkStyle}> {personalInfo.linkedin}</a></h6>
-            </Row>
-            <Row>
-            <h6 className="lead" style={linkStyle}>Github - <a href={personalInfo.github}  style={linkStyle}> {personalInfo.github}</a></h6>
-            </Row>
-        </Col>
-            </div>
-          <div style={rowStyle}>
-          <Row>
-         
-            <Col>
-            <div style={imageJustification}>
-            <a style={{color:"white"}} href ={personalInfo.email}><EmailIcon/></a>
-            </div>
-            </Col>
+        <div style={conatinerStyle}>
            
-            <Col>
-            <div style={imageJustification}>
-            <a style={{color:"white"}}  href={personalInfo.github}><GitHubIcon/></a>
-            </div>
-            </Col>
-            
-            <Col>
-            <div style={imageJustification}>
-            <a style={{color:"white"}}  href={personalInfo.linkedin}><LinkedInIcon/></a>
-            </div>
-            </Col>
-            
-        </Row>
-          </div>
-        </StyleRoot>
         </div>
         
         

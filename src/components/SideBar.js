@@ -14,11 +14,12 @@ export const SideBar = ({technicalSkills}) => {
   },[]);
   return (
     <>
-    <div className="container">
+    <div className="container" id="sidebar">
 
-         <Card className=" shadow" data-aos='fade-up' style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
+         <Card className=" shadow my-5
+         " data-aos='fade-up' style={{backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
       <CardContent>
-        <h4 className = "mb-4" style={{color: 'green'}}>TechStack</h4>
+        <h4 className = "hero mb-4" style={{color: 'green',fontSize: '30px'}}>TechStack</h4>
             <hr style={{color: 'gray'}}/>
             <Row>
             {
