@@ -1,4 +1,5 @@
-import {useEffect,React} from 'react'
+import { useEffect, React } from 'react';
+import { Link, BrowserRouter } from "react-router-dom";
 import Aos from "aos";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import "aos/dist/aos.css"
+import { fontWeight } from '@mui/system';
 export const Footer = ({personalInfo}) => {
     let footerStyle = {
         width: '100%',
@@ -121,11 +123,16 @@ export const Footer = ({personalInfo}) => {
 
         </StyleRoot>
         </Col>
-       </Row>
+        </Row>
+        
+        
        </div>
         <p className='text-center p-7 mb-5'>
-            Copyright &copy; 2022 @Nij Mehar Grover
-        </p>
+        Copyright &copy; 2022 @Nij Mehar Grover | <a style={{ color: "white", fontWeight:'bold',textDecoration: 'none'}} target="_blank" href='https://drive.google.com/file/d/10dPYH7bFEOJT1P8cDYqek4t-YUusMOcd/view?usp=sharing'>Privacy Policy</a>
+        
+      </p>
+      
+      
     </footer>
   )
 }
