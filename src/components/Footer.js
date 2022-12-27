@@ -124,7 +124,7 @@ export const Footer = ({personalInfo}) => {
        </Row>
        </div>
         <p className='text-center p-7 mb-5'>
-            Copyright &copy; 2022 @Nij Mehar Grover
+            Copyright &copy; 2022 @Nij Mehar Grover | <a style={{ color: "white", fontWeight:'bold',textDecoration: 'none'}} target="_blank" href='https://drive.google.com/file/d/10dPYH7bFEOJT1P8cDYqek4t-YUusMOcd/view?usp=sharing'>Privacy Policy</a>
         </p>
     </footer>
   )
