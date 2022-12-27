@@ -60,10 +60,15 @@ function App() {
     {
       name:"Flutter",
       path:"flutter.png",
+    },
+    {
+      name:"Swift",
+      path:"swift.png",
     }
 
+
 ],
-    tools:["Git/Github", "Firebase", "Jira", "Google Cloud", "AWS Lambda", "AWS Amplify", "MY SQL" ,"Windows", "Mac", "Linux","Bootstrap"]
+    tools:["Git/Github", "Firebase", "Jira", "Google Cloud", "AWS Lambda", "AWS Amplify", "MY SQL" ,"Windows", "Mac", "Linux","Bootstrap", "Xcode","SwiftUI"]
   });
 
   let [personalInfo] = useState({
