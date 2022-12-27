@@ -59,7 +59,7 @@ export const PersonalInfo = () => {
         <Col>
         <StyleRoot>
        
-         <p style={paragraphStyle} className="hero glitch layers" data-text="Hi, I am Nij Mehar. 
+         <p style={paragraphStyle} className="hero p-3" data-text="Hi, I am Nij Mehar. 
           An app developer by day and a web developer by night.">
             <span>
                 Hi, I am Nij Mehar. 
