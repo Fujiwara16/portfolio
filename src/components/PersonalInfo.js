@@ -63,7 +63,7 @@ export const PersonalInfo = () => {
           An app developer by day and a web developer by night.">
             <span>
                 Hi, I am Nij Mehar. 
-              An app developer by day and a web developer by night.
+              An inquisitive individual who gets exited everytime an interesting project comes by.
             </span>
          </p>
         </StyleRoot>
@@ -125,7 +125,7 @@ export const PersonalInfo = () => {
           </TimelineDot>
           <TimelineConnector data-aos='fade-up'/>
         </TimelineSeparator>
-        <TimelineContent data-aos='fade-up'>Flutter Dev / DSA</TimelineContent>
+        <TimelineContent data-aos='fade-up'>Flutter Dev | DSA</TimelineContent>
         </TimelineItem>
         <TimelineItem>
         <TimelineOppositeContent
@@ -144,7 +144,7 @@ export const PersonalInfo = () => {
           </TimelineDot>
           <TimelineConnector data-aos='fade-up'/>
         </TimelineSeparator>
-        <TimelineContent data-aos='fade-up'>Flutter Dev / Backend / APIs / DBs / Internship</TimelineContent>
+        <TimelineContent data-aos='fade-up'>Flutter Dev | Backend | APIs | DBs | Internship</TimelineContent>
         </TimelineItem>
        
         <TimelineItem>
@@ -164,6 +164,25 @@ export const PersonalInfo = () => {
           <TimelineConnector data-aos='fade-up'/>
         </TimelineSeparator >
         <TimelineContent data-aos='fade-up'>Web Dev</TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="white"
+          data-aos='fade-up'
+        >
+          6th Sem
+        </TimelineOppositeContent>
+        <TimelineSeparator >
+          <TimelineConnector data-aos='fade-up'/>
+          <TimelineDot data-aos='fade-up'>
+          </TimelineDot>
+          <TimelineConnector data-aos='fade-up'/>
+        </TimelineSeparator >
+        <TimelineContent data-aos='fade-up'>iOS Dev | Swift | SwiftUI | XCode</TimelineContent>
         </TimelineItem>
         </Timeline>
         </div>
