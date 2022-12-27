@@ -31,7 +31,7 @@ export const ContentBody = ({content}) => {
                 content.project ? "" :<Col  style={headerStyle}>{content.location}</Col> 
             }
           </Row>
-          <a href={content.url} style={{color:'white',textDecoration: 'none'}}><h6 style={headerStyle}>Github</h6></a>
+          <a href={content.url} style={{color:'white',textDecoration: 'none'}}><h6 style={headerStyle} data-aos='fade-up'>Github</h6></a>
           <a href="#sidebar" style={{color:'white',textDecoration: 'none'}}><h6 style={headerStyle} data-aos='fade-up'>Tech Stack - {content.techStack} </h6></a>
           <p style={bodyStyle} data-aos='fade-up'>
             {content.body}    
