@@ -63,7 +63,7 @@ export const PersonalInfo = () => {
           An app developer by day and a web developer by night.">
             <span>
                 Hi, I am Nij Mehar. 
-              An inquisitive individual who gets exited everytime an interesting project comes by.
+              An inquisitive individual who gets excited everytime an interesting project comes by.
             </span>
          </p>
         </StyleRoot>
