@@ -15,7 +15,7 @@ export const Article = ({article}) => {
     <a href={article.url} style={{color:"white"}}target="_blank" rel="noopener noreferrer">
         <CardMedia
           component="img"
-          sx={{ width: 200 }}
+          sx={{ width: 120 }}
           image={article.path}
           alt=""
         />

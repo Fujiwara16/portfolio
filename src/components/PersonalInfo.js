@@ -40,9 +40,9 @@ export const PersonalInfo = () => {
         margin: '10px'
     }
     let paragraphStyle = {
-      fontSize: '40px',
+      fontSize: '20px',
       '@media (max-width: 760px) ':{
-        fontSize: '30px',
+        fontSize: '15px',
       },
         color:"white"
     }
@@ -62,9 +62,9 @@ export const PersonalInfo = () => {
          <p style={paragraphStyle} className="hero p-3" data-text="Hi, I am Nij Mehar. 
           An app developer by day and a web developer by night.">
             <span>
-                Hi, I am Nij Mehar. 
-              An inquisitive individual who gets excited everytime an interesting project comes by.
-            </span>
+              I'm Nij Mehar Grover, a fourth-year B.Tech student at Dayalbagh Educational Institute, Agra, India. My passion for software development ignited my journey into creating impactful mobile apps with Flutter, Android, and iOS. I've dabbled in web development with HTML, CSS, JavaScript, and React.
+
+During a 1.5-month internship at Bhanzu, I delved into Python, DBMS, APIs, AWS, and Lambda functions, reinforcing my ability to rapidly learn and implement new technologies. Securing a full-time offer at Bhanzu, I've enhanced the Bhanzu Parent App, transformed a hackathon project into a market-ready product, and explored generative AI. My diverse experiences have sharpened my technical, leadership, and adaptability skills, making me a valuable addition to your team. Eager to contribute my innovation and enthusiasm to your esteemed organization.            </span>
          </p>
         </StyleRoot>
       <div className='my-5'>

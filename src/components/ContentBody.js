@@ -10,7 +10,7 @@ export const ContentBody = ({content}) => {
       }
       let bodyStyle = {
         textAlign:'left',
-        fontSize:'15px',
+        fontSize:'20px',
         whiteSpace: 'pre-line',
       }
       let linkStyle = {

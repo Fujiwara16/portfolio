@@ -21,37 +21,16 @@ export const Content = () => {
       project:false,
       title: "PrevRun",
       url: "https://prevrun.net",
-      body: "PrevRun is a comprehensive project for streamlined video uploading to YouTube, involving various components and stages:\n\n" +
+      body: "\nPrevRun is a comprehensive project for streamlined video uploading to YouTube:\n\n" +
 
-"• Designed a database schema with a 'video_details' table for efficient storage of video metadata.\n" +
-
-"• Implemented an API for validating if a given workspace ID contains the editor's email in its access list, ensuring authorized access for video uploads.\n" +
-
-"• Developed an API to handle removals, preventing unintended workspace ID removals and maintaining data integrity.\n" +
-
-"• Coordinated a series of APIs for video upload: sending the video to an S3 bucket, storing details in the database, and notifying the workspace owner via email.\n" +
-
-"• Utilized CloudFront CDN for efficient video distribution, enhancing the delivery speed and reducing latency.\n" +
-
-"• Uploaded videos to YouTube using EC2 instances, leveraging their processing power and scalability.\n" +
-
-"• Integrated SQS (Simple Queue Service) for managing asynchronous tasks, ensuring efficient video processing and upload workflows.\n" +
-
-"• Created an API for adding or removing a specific email from a creator's workspace, updating the access list and sending an email with the workspace code.\n" +
-
-"• Implemented an API query to retrieve all available workspace IDs for centralized control and management.\n" +
-
-"• Developed functionality for creating workspace IDs, automatically assigning the creator as the owner for a clear ownership structure.\n" +
-
-"• Established an intuitive upload video page and configured the main page for editors, providing an overview of available functionalities.\n" +
-
-"• Set up a custom URL, console.prevrun.net, for secure access to the console interface.\n" +
-
-"• Configured a Git repository and GitHub Actions for version control and automated deployment, ensuring best practices in development.\n" +
-
-"• Demonstrated a robust backend microservice architecture and CICD pipelines for continuous deployment across AWS services (Lambda, EC2, and S3).\n" +
-
-"• Led a team of three, overseeing successful implementation and ensuring the project's overall success.",
+"• Backend API Services: Engineered a series of APIs for video upload, seamlessly managing tasks like sending videos to S3, storing details in the database, and notifying workspace owners.\n" +
+"• CloudFront CDN Integration: Leveraged CloudFront CDN for efficient video distribution, significantly enhancing delivery speed and reducing latency.\n" +
+"• YouTube Video Upload: Implemented the use of EC2 instances to upload videos to YouTube, harnessing their processing power and scalability.\n" +
+"• SQS Integration: Integrated SQS for managing asynchronous tasks, ensuring streamlined video processing and upload workflows.\n" +
+"• Custom Console Interface: Established a secure console interface, console.prevrun.net, providing intuitive access to users.\n" +
+"• Git Repository and CI/CD: Set up a Git repository and implemented GitHub Actions for version control and automated deployment, adhering to best practices.\n" +
+"• Robust Microservice Architecture: Demonstrated expertise in crafting a robust backend microservice architecture, emphasizing scalability and reliability.\n" +
+"• Leadership and Oversight: Led a dedicated team of three, ensuring the successful implementation and overall success of the project.",
       techStack:"Python, Flask API, Fast API, AWS, EC2, Lambda, SNS, SQS, CloudWatch, S3, DynamoDB, Route53, Cloudfront, React",
       role:"CEO, CTO",
       time: "Dec. 2023 - Present",
