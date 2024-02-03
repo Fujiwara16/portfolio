@@ -16,7 +16,7 @@ export const Footer = ({personalInfo}) => {
     }
     let linkStyle = {
       fontSize:'15px',
-      color:'green',
+      color:'white',
      
   }
   let imageJustification = {
