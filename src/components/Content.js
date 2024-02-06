@@ -32,7 +32,7 @@ export const Content = () => {
 "• Robust Microservice Architecture: Demonstrated expertise in crafting a robust backend microservice architecture, emphasizing scalability and reliability.\n" +
 "• Leadership and Oversight: Led a dedicated team of three, ensuring the successful implementation and overall success of the project.",
       techStack:"Python, Flask API, Fast API, AWS, EC2, Lambda, SNS, SQS, CloudWatch, S3, DynamoDB, Route53, Cloudfront, React",
-      role:"CEO, CTO",
+      role:"Software Developer",
       time: "Dec. 2023 - Present",
 
     },{
