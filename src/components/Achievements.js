@@ -27,7 +27,7 @@ export const Achievements = () => {
                     <p className='hero' data-aos="fade-up" style={{fontSize: '20px'}}>HKU | DEI Student Exchange Program</p>                    
                 </Row>
                 <Row xs = {12} md = {2} className="justify-content-start my-5">
-                    <p className='hero' data-aos="fade-up" style={{fontSize: '35px'}}>First in the Nation to implement Metas's Whatsapp Flows</p>                    
+                    <p className='hero' data-aos="fade-up" style={{fontSize: '35px'}}>First in the Nation to implement Meta's Whatsapp Flows</p>                    
                 </Row>
             </Col>
         </div>
