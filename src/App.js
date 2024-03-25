@@ -38,6 +38,10 @@ function App() {
       name:"Uploading videos to youtube via the Youtube api programmatically using the refresh token provided by OAuth 2.0",
       path:"article_4.png",
       url: "https://medium.com/@nijmehar16/uploading-videos-to-youtube-via-the-youtube-api-programmatically-which-uses-oauth-2-0-7317ec72411e"
+    },{
+      name:"Fetching bulk data from AWS Dynamo DB in a pod with limited resources and accessing it",
+      path:"article_5.png",
+      url: "https://aws.plainenglish.io/fetching-bulk-data-from-aws-dynamo-db-in-a-pod-with-limited-resources-and-accessing-it-edcbeeb0cb9e"
     },]})
   let [technicalSkills] = useState({
     programming: [{
