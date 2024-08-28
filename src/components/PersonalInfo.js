@@ -62,9 +62,9 @@ export const PersonalInfo = () => {
          <p style={paragraphStyle} className="hero p-3" data-text="Hi, I am Nij Mehar. 
           An app developer by day and a web developer by night.">
             <span>
-              I'm Nij Mehar Grover, a fourth-year B.Tech student at Dayalbagh Educational Institute, Agra, India. My passion for software development ignited my journey into creating impactful mobile apps with Flutter, Android, and iOS. I've dabbled in web development with HTML, CSS, JavaScript, and React.
+              Hi, I'm Nij Mehar Grover, a fourth-year B.Tech student at Dayalbagh Educational Institute, Agra, India. My journey into software development began with a deep passion for creating impactful mobile apps using Flutter for Android and iOS. I've also explored web development, working with HTML, CSS, JavaScript, and React. Since February 2023, I've been working at Bhanzu, where I've enhanced the Bhanzu Parent App, turned a hackathon project into a successfull POC, and delved into generative AI.
 
-During a 1.5-month internship at Bhanzu, I delved into Python, DBMS, APIs, AWS, and Lambda functions, reinforcing my ability to rapidly learn and implement new technologies. Securing a full-time offer at Bhanzu, I've enhanced the Bhanzu Parent App, transformed a hackathon project into a market-ready product, and explored generative AI. My diverse experiences have sharpened my technical, leadership, and adaptability skills, making me a valuable addition to your team. Eager to contribute my innovation and enthusiasm to your esteemed organization.            </span>
+On the personal side, I'm a video game enthusiast, a car lover, and a gadget aficionado who absolutely loves programming. While I may not be your everyday leetcoder, I excel at solving complex engineering problems. Recently, I've started sharing my knowledge with the community by writing articles that address challenges I've encountered and how to overcome them. I'm currently working on a project that brings commonly used developer tools directly into the terminal, making life easier for developers. I'm eager to connect, share ideas, and stay updated on the latest in tech!</span>
          </p>
         </StyleRoot>
       <div className='my-5'>

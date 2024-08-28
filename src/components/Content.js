@@ -46,6 +46,17 @@ export const Content = () => {
     }]);
     let[projects] = useState([
     {
+      id:6,
+      project:false,
+      title: "Dev Utils",
+      url: "https://github.com/Fujiwara16/dev_utils_cli",
+      body: "Developed Dev Utils CLI, an open-source command-line tool that provides essential utilities for developers, including time conversion (currentTime, dateToEpoch), Base64 encoding/decoding (base64Encode, base64Decode), and data formatting for JSON and CSV (jsonFormat, csvFormat). The tool is designed to streamline common developer tasks and enhance productivity.",
+      techStack:"Python, CLI integrations",
+      role:"Software Developer",
+      time: "Aug. 2024",
+
+    },
+    {
       id:5,
       project:false,
       title: "PrevRun",
@@ -64,18 +75,7 @@ export const Content = () => {
       role:"Software Developer",
       time: "Dec. 2023 - Feb. 2024",
     },
-    {
-      id:5,
-      project:false,
-      title: "Dev Utils",
-      url: "https://github.com/Fujiwara16/dev_utils_cli",
-      body: "Developed Dev Utils CLI, an open-source command-line tool that provides essential utilities for developers, including time conversion (currentTime, dateToEpoch), Base64 encoding/decoding (base64Encode, base64Decode), and data formatting for JSON and CSV (jsonFormat, csvFormat). The tool is designed to streamline common developer tasks and enhance productivity.",
-      techStack:"Python, CLI integrations",
-      role:"Software Developer",
-      time: "Aug. 2024",
-
-    },
-    {
+        {
       id:4,
       project:true,
       title: "Surat Saheli",
