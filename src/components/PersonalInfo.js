@@ -52,7 +52,7 @@ export const PersonalInfo = () => {
        <Row>
         <Col xs = {12} md = {7} lg = {5} >
         <StyleRoot style={imageJustification}>
-            <img src="myPhoto.jpg" style={imageStyle} alt=""  data-aos='fade-up'/>
+            <img src="myPhoto.jpeg" style={imageStyle} alt=""  data-aos='fade-up'/>
             </StyleRoot>
         </Col>
    
